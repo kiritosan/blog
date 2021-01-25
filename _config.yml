@@ -79,3 +79,10 @@ theme: diaspora
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# 搜索文件
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
