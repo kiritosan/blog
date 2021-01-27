@@ -4,4 +4,4 @@
 
 本博客由[Hexo](https://hexo.io/)驱动 并通过Vercel部署
 
-站点地址: https://hexo-smoky-tau.vercel.app
+站点地址: https://ataraxia.top
