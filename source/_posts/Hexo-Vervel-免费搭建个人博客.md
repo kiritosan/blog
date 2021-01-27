@@ -13,13 +13,17 @@ tags:
 
 因为有过之前的经验，这次搭建过程不是非常困难，但是也遇到了不少问题。
 
-因为之前折腾过的缘故，一些环境在我的电脑里面已经配置好了，比如Node.Js，Hexo-Cli.
+因为之前折腾过的缘故，一些环境在我的电脑里面已经配置好了，比如Node.Js，Hexo-Cli等等.
 
 接下来我将凭借回忆将搭建过程一步步写出来。
+
+以下内容都是自己个人理解，所以内容比较不是那么权威，偏口语话，有可能会有错误，欢迎指教。
 
 ##  准备工作
 
 ### hexo
+
+hexo是一个博客框架，不同于wordpress，它是一个生成静态博客的框架。个人理解wordpress和hexo的动态静态的区别类似编程语言中的脚本语言(比如Python)与编译语言(比如Java,C)的区别
 
 ### github
 
@@ -29,4 +33,6 @@ tags:
 
 ## 原理
 
-## 
+![image-20210127204635787](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210127204635787.png)
+
+用hexo在本地写好文章后推送到github github改动后vercel就可以监控到，同时vercel重新部署页面。
