@@ -86,3 +86,11 @@ search:
   field: post
   format: html
   limit: 10000
+
+# 懒加载图片 npm install hexo-lazyload-image --save
+lazyload:
+  enable: true
+  # onlypost 是否仅文章中的图片做懒加载, 如果为 false, 则主题中的其他图片, 也会做懒加载, 如头像, logo 等任何图片.
+  onlypost: false
+  # loadingImg - 图片未加载时的代替图
+  loadingImg: /images/loading.png
