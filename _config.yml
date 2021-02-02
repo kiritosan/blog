@@ -94,3 +94,11 @@ lazyload:
   onlypost: false
   # loadingImg - 图片未加载时的代替图
   loadingImg: /images/loading.png
+
+
+# 安装文档https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/ALGOLIA-SEARCH.md添加的
+algolia:
+  applicationID: 'IVP6C2SJP2'
+  apiKey: 'd2d9e3b06e051abc77553f1d23c132ed'
+  indexName: 'ataraxia'
+  chunkSize: 5000
