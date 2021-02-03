@@ -107,7 +107,7 @@ ataraxia.top这个个人域名来源于古希腊的一种哲学思想。
 
 ![image-20210203233209726.png](https://i.loli.net/2021/02/04/eHDsJKEGAF1IRM7.png)
 
-这个就是我刚刚被分配给的二级域名。
+这个就是我刚刚被分配给的二级域名。顺带一提，vercel部署成功后github还会发送一封邮件进行提示。
 
 ![image-20210203233259001.png](https://i.loli.net/2021/02/04/fYnlB4aQEcURAGS.png)
 
