@@ -45,7 +45,7 @@ Vercel个人理解相当于远程自动执行的个人电脑，使用hexo写文�
 
 ataraxia.top这个个人域名来源于古希腊的一种哲学思想。
 
-[https://en.wikipedia.org/wiki/Ataraxia]: 
+[Ataraxia]: https://en.wikipedia.org/wiki/Ataraxia
 
 
 
