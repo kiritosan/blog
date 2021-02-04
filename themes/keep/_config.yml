@@ -174,8 +174,8 @@ comment:
   # Valine
   # See: https://github.com/xCss/Valine
   valine:
-    appid: XBoz03SFElEUFr5E7WkKMyaL-gzGzoHsz               # your leancloud application appid
-    appkey: sfBxnNwq3mrGtPl1NCXnEWtV              # your leancloud application appkey
+    appid: qn7HhLhNuOFAaSk15Dpk7jjX-MdYXbMMI               # your leancloud application appid
+    appkey: EqEEkShSqbO2DvCkdSeiue86              # your leancloud application appkey
     placeholder:          # your placeholder
 
   # Gitalk
