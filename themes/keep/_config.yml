@@ -168,14 +168,14 @@ local_search:
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: false
+  enable: true
   use: valine  # values: valine | gitalk | twikoo
 
   # Valine
   # See: https://github.com/xCss/Valine
   valine:
-    appid:                # your leancloud application appid
-    appkey:               # your leancloud application appkey
+    appid: XBoz03SFElEUFr5E7WkKMyaL-gzGzoHsz               # your leancloud application appid
+    appkey: sfBxnNwq3mrGtPl1NCXnEWtV              # your leancloud application appkey
     placeholder:          # your placeholder
 
   # Gitalk
@@ -220,7 +220,7 @@ cdn:
 # PJAX
 # ---------------------------------------------------------------------------------------
 pjax:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
