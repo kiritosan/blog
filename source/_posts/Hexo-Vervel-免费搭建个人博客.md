@@ -51,11 +51,11 @@ ataraxia.top这个个人域名来源于古希腊的一种哲学思想。
 
 ![image-20210127204635787.png](https://i.loli.net/2021/01/27/OqDxzovR7EmGwZK.png)
 
-1. ### 用hexo在本地写好文章后推送到github
+### 1. 用hexo在本地写好文章后推送到github
 
-2. ### vercel监控到github改动
+### 2. vercel监控到github改动
 
-3. ### vercel重新部署页面
+### 3. vercel重新部署页面
 
 ## 正题
 
