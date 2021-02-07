@@ -23,45 +23,39 @@ tags:
 
 ##  准备工作
 
-### Hexo
+### [Hexo](https://hexo.io/zh-cn/)
 
 hexo是一个博客框架，不同于wordpress，它是一个生成静态博客的框架。个人理解wordpress和hexo的动态静态的区别类似编程语言中的脚本语言(比如Python)与编译语言(比如Java,C)的区别。
 
-[Hexo官网]: https://hexo.io/zh-cn/	"Hexo"
-
-### Github
+### [Github](https://github.com/)
 
 github是一个代码托管平台，也是一个开源社区，我们可以将自己本地的代码上传到自己的公有仓库，这样大家就都可以查看并添加自己的想法进去，实现一个项目的可持续发展。
 
-[Github]: https://github.com	"Github"
-
-### Vercel
+### [Vercel](https://vercel.com/)
 
 Vercel个人理解相当于远程自动执行的个人电脑，使用hexo写文章并发布时一般需要先在本地运行hexo g生成静态页面，然后推送到github。而使用Vercel的话，不需要在本地生成hexo静态页面，只需将hexo的内容推送到github，vercel就会自动响应，生成静态页面并展示。
 
-[Vercel](https://vercel.com)
-
 ### 域名(可选)
 
-作为一个学生党，这是我第二次买域名，第一次是大概一年前在腾讯云花一块钱买的，到期之后续费要六七十，就放弃了，买的时候也没想要长久持有。当初是因为学生优惠买了一年的阿里云主机，于是顺势买了域名。阿里云主机到期后，域名也就没有续费。
+这是我第二次花钱买域名，第一次是一年前在腾讯云花一块钱买的，到期之后续费要六七十，就放弃了，买的时候也没想要长久持有。当初是因为学生优惠买了一年的阿里云主机，于是顺势买了域名。阿里云主机到期后，域名也就没有续费。
 
 在之前就是用免费域名了，记得曾经注册过一个.tk域名，免费域名麻烦的地方在于不稳定，不知道什么时候就会被回收。
 
-这次是从namesilo买的.top域名，价格比较便宜，打算长期持有。
+这次是从[namesilo](https://www.namesilo.com/)买的.top域名，价格比较便宜，打算长期持有。
 
 ataraxia.top这个个人域名来源于古希腊的一种哲学思想。
 
-[Ataraxia]: https://en.wikipedia.org/wiki/Ataraxia
-
-
+[Ataraxia](https://en.wikipedia.org/wiki/Ataraxia/)
 
 ## 原理
 
 ![image-20210127204635787.png](https://i.loli.net/2021/01/27/OqDxzovR7EmGwZK.png)
 
-1. 用hexo在本地写好文章后推送到github
-2. vercel监控到github改动
-3. vercel重新部署页面
+1. ### 用hexo在本地写好文章后推送到github
+
+2. ### vercel监控到github改动
+
+3. ### vercel重新部署页面
 
 ## 正题
 
