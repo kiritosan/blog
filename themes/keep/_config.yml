@@ -36,7 +36,7 @@ style:
 
   # First screen
   first_screen:
-    enable: false
+    enable: true
     background_img: /images/bg.svg   # You can use local image or image external link
     description: Keep writing and Keep loving.
 
@@ -52,16 +52,16 @@ style:
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact:
-  enable: false
+  enable: true
   links:
-    github:          # your GitHub URL
+    github: https://github.com/kiritosan         # your GitHub URL
     weixin:          # your WeChat QR-Code URL
     qq:              # your QQ QR-Code URL
     weibo:           # your WeiBo URL
     zhihu:           # your ZhiHu URL
     twitter:         # your twitter URL
     facebook:        # your facebook URL
-    email:           # your email
+    email: info@ataraxia.top          # your email
 
 
 # ---------------------------------------------------------------------------------------
@@ -70,10 +70,10 @@ social_contact:
 menu:
   Home: /
   Archives: /archives
-  # Categories: /categories
+  Categories: /categories
   # Tags: /tags
-  # Links: /links
-  # About: /about
+  Links: /links
+  About: /about
   # Changelog: /changelog
   # ......
 
@@ -98,9 +98,9 @@ post:
   # Dependencies: hexo-wordcount (npm install hexo-wordcount)
   # See: https://github.com/willin/hexo-wordcount
   word_count:
-    enable: false
-    wordcount: false  # word count, one article
-    min2read: false   # time to read, one article
+    enable: true
+    wordcount: true  # word count, one article
+    min2read: true   # time to read, one article
 
   # Author label
   author_label:
@@ -125,13 +125,13 @@ toc:
   enable: true
 
   # Automatically add list number to toc.
-  number: false
+  number: true
 
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
 
   # If true, open TOC every time when you enter the article page
-  init_open: false
+  init_open: true
 
 
 # ---------------------------------------------------------------------------------------
@@ -148,10 +148,10 @@ website_count:
   # busuanzi
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
-    enable: false
+    enable: true
     site_uv: false
-    site_pv: false
-    page_pv: false
+    site_pv: true
+    page_pv: true
 
 
 # ---------------------------------------------------------------------------------------
@@ -199,14 +199,14 @@ comment:
 # See: https://github.com/hexojs/hexo-generator-feed
 # ---------------------------------------------------------------------------------------
 rss:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
 # Lazyload image
 # ---------------------------------------------------------------------------------------
 lazyload:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
