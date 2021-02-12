@@ -111,3 +111,10 @@ nofollow:
   exclude:
     - 'exclude1.com'
     - 'exclude2.com'
+
+# Feed Atom
+# npm install hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20

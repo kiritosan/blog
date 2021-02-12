@@ -72,7 +72,7 @@ menu:
   Archives: /archives
   Categories: /categories
   Tags: /tags
-  # Links: /links
+  Links: /links
   About: /about
   # Changelog: /changelog
   # ......
@@ -213,7 +213,7 @@ lazyload:
 # CDN
 # ---------------------------------------------------------------------------------------
 cdn:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
