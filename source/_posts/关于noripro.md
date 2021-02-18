@@ -15,14 +15,10 @@ Open Graph Protocal是一种新的HTTP头部标记，简称og，这种协议可�
 在看源码的时候感觉主页结构好清晰，不知道是用什么写出来的，难道是一行一行敲出来的吗。
 在看一下源码，又发现了新的东西，有一个grid闯入了我的视野，检索了一下发现是一种CSS布局模式，找到了阮一峰老师的一篇文章，讲的比较详细。
 
-
-
-
 参考：
-[https://noripro.jp/]
-[https://zh.moegirl.org.cn/%E9%AC%BC%E7%81%AFWarabe]
-[https://zh.moegirl.org.cn/A-SOUL]
-[https://www.bilibili.com/video/BV11o4y197KK]
-
-[https://ogp.me/]
-[http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html]
+<https://noripro.jp/>
+<https://zh.moegirl.org.cn/%E9%AC%BC%E7%81%AFWarabe>
+<https://zh.moegirl.org.cn/A-SOUL>
+<https://www.bilibili.com/video/BV11o4y197KK>
+<https://ogp.me/>
+<http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html>

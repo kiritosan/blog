@@ -13,7 +13,7 @@ tag:
 
 站点地图，Sitemap 是一个形式为xml或html的文件
 
-### 谷歌爬虫抓取网站的方式:	[Google 搜索的工作方式  | Google 搜索中心  | Google Developers](https://developers.google.com/search/docs/beginner/how-search-works)
+### 谷歌爬虫抓取网站的方式：[Google 搜索的工作方式  | Google 搜索中心  | Google Developers](https://developers.google.com/search/docs/beginner/how-search-works)
 
 #### 抓取
 
@@ -45,7 +45,7 @@ Googlebot 会处理它抓取的每个网页，以便了解每个网页的内容�
 
 在终端输入如下命令(安装自动生成sitemap插件)
 
-```
+```bash
 npm install hexo-generator-sitemap --save #给谷歌看
 npm install hexo-generator-baidu-sitemap --save #给百度看
 ```
@@ -62,7 +62,7 @@ npm install hexo-generator-baidu-sitemap --save #给百度看
 
 谷歌给站长提供了一个工具：
 
-https://search.google.com/search-console
+<https://search.google.com/search-console>
 
 在里面添加网站后会是下面这种效果
 
