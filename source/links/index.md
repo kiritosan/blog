@@ -2,7 +2,9 @@
 
 ---
 
-# [大于二三](https://www.xxbxk.top/)-人生不如意十之八九，可与人言无二三
+## [大于二三](https://www.xxbxk.top/)-人生不如意十之八九，可与人言无二三
+
+## [YFun's Blog](https://blog.yfun.top/)-探寻一切有趣的事物！
 
 
 
