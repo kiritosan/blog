@@ -137,8 +137,6 @@ Cygames目前正在运营的iOS / Android / PC（DMM GAMES）应用程序“ Pri
 
 原文：[『プリコネR』4年目を木村プロデューサーが語る。育成やクランバトルで実施予定の調整とは - 電撃オンライン (dengekionline.com)](https://dengekionline.com/articles/68070/)
 
-
-
 nodeppt测试
 
 <iframe src="../../nodeppt/demo/slide.html" width="100%" height="500" name="topFrame" scrolling="yes" noresize="noresize" frameborder="0" id="topFrame"></iframe>
