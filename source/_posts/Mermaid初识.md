@@ -2,6 +2,7 @@
 title: Mermaid初识
 date: 2021-02-18 10:50:54
 tags:
+- tools
 ---
 
 ## Mermaid是什么
