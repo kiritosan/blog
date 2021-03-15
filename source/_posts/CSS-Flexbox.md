@@ -6,15 +6,15 @@ tags:
 
 ---
 
-**Use display: flex to Position Two Boxes**
+## **Use display: flex to Position Two Boxes**
 
 通过display: flex; 使用flexbox布局
 
-**Add Flex Superpowers to the Tweet Embed**
+## **Add Flex Superpowers to the Tweet Embed**
 
 通过在需要的地方加入display:flex将其变成flexbox布局
 
-**Use the flex-direction Property to Make a Row**
+## **Use the flex-direction Property to Make a Row**
 
 翻转行
 
@@ -32,13 +32,13 @@ tags:
 
 **Note:** The default value for the `flex-direction` property is `row`.
 
-**Apply the flex-direction Property to Create Rows in the Tweet Embed**
+## **Apply the flex-direction Property to Create Rows in the Tweet Embed**
 
 要求:Add the CSS property `flex-direction` to both the `header` and `footer` and set the value to `row`.
 
 header和footer设置格式后其子节点都会继承flexbox布局，设置flex-derection:row;之后header和footer及其子节点都会水平居中
 
-**Use the flex-direction Property to Make a Column**
+## **Use the flex-direction Property to Make a Column**
 
 ```css
   #box-container {
@@ -48,7 +48,7 @@ header和footer设置格式后其子节点都会继承flexbox布局，设置flex
   }
 ```
 
-**Apply the flex-direction Property to Create a Column in the Tweet Embed**
+## **Apply the flex-direction Property to Create a Column in the Tweet Embed**
 
 ```css
   header .profile-name {
@@ -58,7 +58,7 @@ header和footer设置格式后其子节点都会继承flexbox布局，设置flex
   }
 ```
 
-**Align Elements Using the justify-content Property**
+## **Align Elements Using the justify-content Property**
 
 ![](https://cdn.jsdelivr.net/gh/kiritosan/pic@master/img/Here%20is%20a%20useful%20image%20showing%20a%20row%20to%20illustrate%20the%20concepts%20below.png)
 
@@ -82,9 +82,7 @@ space-evenly
   }
 ```
 
-
-
-**Use the justify-content Property in the Tweet Embed**
+## **Use the justify-content Property in the Tweet Embed**
 
 ```css
   header .profile-name {
@@ -94,7 +92,7 @@ space-evenly
     margin-left: 10px;
 ```
 
-**Align Elements Using the align-items Property**
+## **Align Elements Using the align-items Property**
 
 flex containers的align-items属性也可以进行元素的位置调整，通过cross axis进行调整
 
@@ -121,7 +119,7 @@ baseline
   }
 ```
 
-**Use the align-items Property in the Tweet Embed**
+## **Use the align-items Property in the Tweet Embed**
 
 ```css
   header .follow-btn {
@@ -131,7 +129,7 @@ baseline
   }
 ```
 
-**Use the flex-wrap Property to Wrap a Row or Column**
+## **Use the flex-wrap Property to Wrap a Row or Column**
 
 使用flex-wrap将flex item分割成多行或多列
 
@@ -179,7 +177,7 @@ flex-shrink:
   }
 ```
 
-**Use the flex-grow Property to Expand Items**
+## **Use the flex-grow Property to Expand Items**
 
 ```css
 <style>
@@ -209,7 +207,7 @@ flex-shrink:
 
 flex-grow是和flex-shrink相对的属性
 
-**Use the flex-basis Property to Set the Initial Size of an Item**
+## **Use the flex-basis Property to Set the Initial Size of an Item**
 
 ```css
 单位可以用px, em, %, etc
@@ -234,26 +232,3 @@ flex-grow是和flex-shrink相对的属性
   }
 </style>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
