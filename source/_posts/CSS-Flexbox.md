@@ -60,7 +60,7 @@ header和footer设置格式后其子节点都会继承flexbox布局，设置flex
 
 ## **Align Elements Using the justify-content Property**
 
-![](https://cdn.jsdelivr.net/gh/kiritosan/pic@master/img/Here%20is%20a%20useful%20image%20showing%20a%20row%20to%20illustrate%20the%20concepts%20below.png)
+![flex justify-content align rule](https://cdn.jsdelivr.net/gh/kiritosan/pic@master/img/Here%20is%20a%20useful%20image%20showing%20a%20row%20to%20illustrate%20the%20concepts%20below.png)
 
 flex元素的排列方向被叫做main axis 主轴 对于row来说是一条水平线，column是一条垂直线。
 
@@ -152,7 +152,7 @@ wrap-reverse
   }
 ```
 
-**Use the flex-shrink Property to Shrink Items**
+## **Use the flex-shrink Property to Shrink Items**
 
 上面都是通过对flex container进行作用进而影响下面的flex item
 
