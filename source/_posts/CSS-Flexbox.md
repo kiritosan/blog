@@ -232,3 +232,43 @@ flex-grow是和flex-shrink相对的属性
   }
 </style>
 ```
+
+突然发现FCC有中文版本，切换。
+
+## 使用 flex 短方法属性
+
+```css
+<--!flex-grow: 1; flex-shrink: 0; flex-basis: 10px;-->
+flex: 1 0 10px;
+
+<--!默认值为flex: 0 1 auto;-->
+```
+
+```css
+<--!放大是两倍，缩小也是两倍-->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    flex:2 2 150px;
+    height: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    flex:1 1 150px;
+    height: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
+```
+
+![](https://cdn.jsdelivr.net/gh/kiritosan/pic@master/img/drag.gif)
