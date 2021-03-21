@@ -272,3 +272,24 @@ flex: 1 0 10px;
 ```
 
 ![](https://cdn.jsdelivr.net/gh/kiritosan/pic@master/img/drag.gif)
+
+使用 order 属性重新排列子元素
+
+order属性可以是负值，根据数字的大小决定出现的顺序，数轴左边的先出现
+
+```css
+order: 1;
+order: 2;
+order: -1;
+```
+
+使用 align-self 属性
+
+调整单个子元素自己的对齐方式
+
+float、clear 和 vertical-align 等调整对齐方式的属性不能应用于 flex 子元素
+
+```css
+    align-self: center;
+    align-self: flex-end;
+```
