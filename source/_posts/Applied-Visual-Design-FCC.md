@@ -6,45 +6,43 @@ tags:
 
 ---
 
+## strong
 
+## u
 
-strong
+## em 放在p标签里面
 
-u
+## s
 
-em 放在p标签里面
+## hr 单标签
 
-s
+## rgba()
 
-hr 单标签
+## padding
 
-rgba()
+## font-size
 
-padding
+## box-shadow
 
-font-size
-
-
-
-box-shadow
-
- \#thumbnail {
+```CSS
+ #thumbnail {
 
  	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
  }
+```
 
-图片和文本块的opacity属性
+## 图片和文本块的opacity属性
 
-text-transform
+## text-transform
 
 ​	uppercase
 
-font-size
+## font-size
 
-font-weight
+## font-weight
 
-line-height
+## line-height
 
 
 
@@ -67,7 +65,7 @@ p {
 
 **CSS Offsets**
 
-绝对位置
+## 绝对位置
 
 position: absolute;
 
@@ -97,11 +95,7 @@ position: absolute | relative | fixed | sticky
 
 元素自动居中
 
-
-
-补色
-
-
+## 补色
 
 primary colors
 
@@ -115,8 +109,6 @@ Tertiary colors
 
 Tertiary colors are the result of combining a primary color with one of its secondary color neighbors.
 
-
-
 split-complementary color scheme
 
 | Color     | Hex     |
@@ -127,9 +119,7 @@ split-complementary color scheme
 
 色板上面的相反颜色(补色)并列放置给人对比强烈的印象
 
-
-
-调整颜色色调
+## 调整颜色色调
 
 颜色的特征有hue, saturation, and lightness色调 饱和度 亮度
 
@@ -140,8 +130,6 @@ css引入了 hsl() hsl中色调使用色轮，而不是光谱 颜色的角度是
 亮度是颜色中白色和黑色的量，0%全是黑色 100%全是白色，50%为正常颜色
 
 通过调整hsl中的s和l值更改颜色的色调
-
-
 
 background color 的linear-gradient(90deg, red, yellow, rgb(204, 204, 255))函数设置线性颜色渐变
 
@@ -162,8 +150,6 @@ background: linear-gradient(35deg, #CCFFFF , #FFCCCC);
 <div></div>
 ```
 
-
-
 ```css
 repeating-linear-gradient(
       45deg,
@@ -174,7 +160,7 @@ repeating-linear-gradient(
     )
 ```
 
-背景的url()函数
+## 背景的url()函数
 
 ```css
 <style>
@@ -184,7 +170,7 @@ repeating-linear-gradient(
 </style>
 ```
 
-transform参数改变元素大小为原来的数倍
+## transform参数改变元素大小为原来的数倍
 
 ```css
 #ball2 {
@@ -193,7 +179,7 @@ transform参数改变元素大小为原来的数倍
 }
 ```
 
-移到元素上面改变元素大小 :hover
+## 移到元素上面改变元素大小 :hover
 
 ```css
 div:hover {
@@ -201,7 +187,7 @@ div:hover {
 }
 ```
 
-transform属性的skewX函数把举行变成平行四边形 相对应的有skewY函数
+## transform属性的skewX函数把举行变成平行四边形 相对应的有skewY函数
 
 ```css
   #bottom {
@@ -210,7 +196,7 @@ transform属性的skewX函数把举行变成平行四边形 相对应的有skewY
   }
 ```
 
-蓝月亮
+## 蓝月亮
 
 ```css
 <style>
@@ -231,7 +217,7 @@ transform属性的skewX函数把举行变成平行四边形 相对应的有skewY
 </style>
 ```
 
-画一个心:heart:
+## 画一个心:heart:
 
 transform的rotate()
 
@@ -275,7 +261,7 @@ transform的rotate()
 <div class="heart"></div>
 ```
 
-动画
+## 动画
 
 动画属性(总共八个)和帧
 
@@ -315,7 +301,7 @@ animation property
 <div id="rect"></div>
 ```
 
-改变悬浮到元素上时的颜色
+## 改变悬浮到元素上时的颜色
 
 ```css
 <style>
@@ -342,7 +328,7 @@ animation property
 <button>Register</button>
 ```
 
-通过改变动画填充模式使悬浮颜色变得持久
+## 通过改变动画填充模式使悬浮颜色变得持久
 
 ```css
 #放置到:hover里
@@ -389,7 +375,7 @@ animation-fill-mode: forwards;
 <div id="rect"></div>
 ```
 
-opacity属性
+## opacity属性
 
 ```css
 <style>
@@ -422,7 +408,7 @@ opacity属性
 <div id="ball"></div>
 ```
 
-animation-iteration-count属性设为infinite使球无限跳动
+## animation-iteration-count属性设为infinite使球无限跳动
 
 ```css
 <style>
@@ -460,7 +446,7 @@ animation-iteration-count属性设为infinite使球无限跳动
 <div id="ball"></div>
 ```
 
-让心永恒跳动
+## 让心永恒跳动
 
 ```css
 <style>
@@ -534,7 +520,7 @@ animation-iteration-count属性设为infinite使球无限跳动
 <div class="heart"></div>
 ```
 
-改变@keyframe里面的百分比使得两颗星星跳动频率不一致
+## 改变@keyframe里面的百分比使得两颗星星跳动频率不一致
 
 ```css
 <style>
@@ -591,7 +577,7 @@ animation-iteration-count属性设为infinite使球无限跳动
 <div class="star-2 stars"></div>
 ```
 
-通过修改animation-duration修改三颗星星的频率
+## 通过修改animation-duration修改三颗星星的频率
 
 ```css
 <style>
@@ -649,7 +635,7 @@ animation-iteration-count属性设为infinite使球无限跳动
 <div class="star-3 stars"></div>
 ```
 
-修改animation-timing-function为linear和ease-out更改运动的加速度
+## 修改animation-timing-function为linear和ease-out更改运动的加速度
 
 ```css
 <style>
@@ -693,7 +679,7 @@ animation-iteration-count属性设为infinite使球无限跳动
 <div class="balls" id="ball2"></div>
 ```
 
-cubic-bezier函数 控制运动方式 从00开始到11结束
+## cubic-bezier函数 控制运动方式 从00开始到11结束
 
 ```css
 animation-timing-function:cubic-bezier(0.25, 0.25, 0.75, 0.75);
