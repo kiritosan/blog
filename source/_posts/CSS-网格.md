@@ -120,4 +120,96 @@ end：使内容在单元格右侧对齐
     align-items: end;
 ```
 
-## 
+## 将网格划分为区域模板
+
+通过使用grid-template-areas将部分网格合成为一个有名字的区域（area）
+
+```CSS
+<--!每个单词代表一个网格单元格，每对引号代表一行 除了自定义标签之外还可以使用点（.）来表示一个空单元格-->
+grid-template-areas: "header header header" "advert content content" "footer footer footer";
+```
+
+## 使用 grid-area 属性将项目放置在网格区域中
+
+在为网格添加区域模板后，通过对网格项使用 grid-area属性，属性值设定为定义区域的名称，将元素放入相应的区域。
+
+```CSS
+    grid-area:footer;
+```
+
+## 使用 grid-area 创建区域模板
+
+网格中没有定义区域模板的情况下可以用grid-area直接创建区域模板
+
+```CSS
+item1 { grid-area: 1/1/2/4; }
+
+<--!顺序为grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;-->
+
+```
+
+## 使用 repeat 函数减少重复
+
+```CSS
+<--!先重复次数 后重复值-->
+grid-template-rows: repeat(100, 60px);
+grid-template-columns: repeat(2, 1fr 60px) 20px;
+<--!等价于grid-template-columns: 1fr 60px 1fr 60px 20px;-->
+```
+
+## 使用 minmax 函数限制项目大小
+
+grid-template-columns和grid-template-rows可以使用内置函数minmax在网格容器改变大小时限制网格项的大小
+
+```CSS
+<--!通过 grid-template-columns 添加两列，第一列宽度为 100px，第二列宽度最小值是 50px，最大值是 200px。-->
+grid-template-columns: 100px minmax(50px, 200px);
+```
+
+## 使用 auto-fill 创建弹性布局
+
+repeat函数有自动填充(auto-fill)的功能，能够根据容器的大小，尽可能多地放入指定大小的行或列。
+
+```CSS
+<--!下面的代码效果是：首先，列的宽度会随容器大小改变。其次，只要容器宽度不足以插入一个宽为 60px 的列，当前行的所有列就都会一直拉伸。**注意：**如果容器宽度不足以将所有网格项放在同一行，余下的网格项将会移至新的一行。-->
+grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+```
+
+## 使用 auto-fit 创建弹性布局
+
+auto-fit 效果几乎和 auto-fill 一样。 不同点仅在于，当容器的大小大于各网格项之和时，auto-fill 会持续地在一端放入空行或空列，这样就会使所有网格项挤到另一边；而 auto-fit 则不会在一端放入空行或空列，而是会将所有网格项拉伸至合适的大小。
+
+```CSS
+<--!和上面代码效果一起放在一起比较好理解-->
+grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+```
+
+## 使用媒体查询创建响应式布局
+
+```CSS
+  @media (min-width: 400px){
+    .container{
+      grid-template-areas:
+
+        "header header"
+        "advert content"
+        "footer footer";
+
+    }
+  }
+```
+
+## 在网格中创建网格
+
+由于将元素转换为网格只会影响其子元素（direct descendants），所以把某个子元素设置为网格，就会得到一个嵌套的网格。
+
+```CSS
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+```
+
+完
