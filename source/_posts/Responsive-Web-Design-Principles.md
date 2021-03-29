@@ -5,8 +5,6 @@ tags:
 - 前端
 ---
 
-f
-
 Media Queries
 
 根据屏幕大小不同进行不同的css渲染
