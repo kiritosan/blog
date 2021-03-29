@@ -55,13 +55,13 @@ grid-template-columns: auto 50px 10% 2fr 1fr;
 
 ## 使用 grid-row-gap 创建多行之间的间距
 
-grid-row-gap:5px;
+    grid-row-gap:5px;
 
 ## 使用 grid-gap 为网格添加间距
 
 grid-gap的值分别为行间隔和列间隔
 
-grid-gap: 10px 20px;
+    grid-gap: 10px 20px;
 
 ## 使用 grid-column 来控制空间大小
 
@@ -73,9 +73,9 @@ grid-gap: 10px 20px;
 
 ![grid网格](https://cdn.jsdelivr.net/gh/kiritosan/pic@master/img/grid%E7%BD%91%E6%A0%BC.png)
 
-使用grid-column属性的加上网格线的起止编号定义元素在网格中列的起始和结束的位置。
+## 使用grid-column属性的加上网格线的起止编号定义元素在网格中列的起始和结束的位置。
 
-grid-column: 1 / 3;
+    grid-column: 1 / 3;
 
 ## 使用 grid-row 来控制空间大小
 
