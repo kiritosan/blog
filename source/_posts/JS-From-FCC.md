@@ -1156,4 +1156,100 @@ The above will display the string Hello in the console, and return the string Wo
     }
     ];
 
-## 
+## Accessing Nested Objects
+
+    // Setup
+    var myStorage = {
+    "car": {
+        "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+        },
+        "outside": {
+        "trunk": "jack"
+        }
+    }
+    };
+
+// 这里不能用myStorage.car["inside"]["glove box"]
+
+    var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+
+## Accessing Nested Arrays
+
+    // Setup
+    var myPlants = [
+    {
+        type: "flowers",
+        list: [
+        "rose",
+        "tulip",
+        "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+        "fir",
+        "pine",
+        "birch"
+        ]
+    }
+    ];
+
+    // Only change code below this line
+
+    var secondTree = myPlants[1].list[1]; // Change this line
+
+## Record Collection*
+
+[CSDN解决方案](https://blog.csdn.net/weixin_30391339/article/details/98212760)
+
+### 失败案
+
+    // Setup
+    var collection = {
+    2548: {
+        albumTitle: 'Slippery When Wet',
+        artist: 'Bon Jovi',
+        tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    },
+    2468: {
+        albumTitle: '1999',
+        artist: 'Prince',
+        tracks: ['1999', 'Little Red Corvette']
+    },
+    1245: {
+        artist: 'Robert Palmer',
+        tracks: []
+    },
+    5439: {
+        albumTitle: 'ABBA Gold'
+    }
+    };
+
+    // Only change code below this line
+    function updateRecords(object, id, prop, value) {
+    //有tracks时
+    if (object['tracks']){
+        object[id][tracks] += prop;
+    }else{
+        //没有tracks 但输入tracks时 添加
+        if (prop == 'tracks'){
+        object[id][tracks] = value;
+        }else{
+        //没有tracks 输入不是tracks时 若数值为空则删除属性
+        if(value==""){
+            delete object[id][prop];
+            //若有数值则添加
+        }else{
+            object[id][prop] = value;
+        }
+        }
+
+    }
+    return object;
+    }
+
+    updateRecords(collection, 5439, 'artist', 'ABBA');
+
