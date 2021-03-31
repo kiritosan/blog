@@ -895,4 +895,265 @@ The above will display the string Hello in the console, and return the string Wo
 
     abTest(2,2);
 
+## Counting Cards
+
+二十一点
+
+    var count = 0;
+
+    function cc(card) {
+    // Only change code below this line
+      switch(card){
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+          count+=1;
+          break;
+
+        case 7:
+        case 8:
+        case 9:
+          count+=0;
+        break;
+
+        case 10:
+        case 'J':
+        case 'Q':
+        case 'K':
+        case 'A':
+         count -=1;
+          break;
+       
+      }
+      //根据count结果进行判断
+      if (count>0){  
+         return count +" Bet";
+      }else if(count<=0){
+        return count +" Hold";
+      }
+
+    // Only change code above this line
+    }
+
+    cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+## Build JavaScript Objects
+
+    var myDog = {
+    // Only change code below this line
+    "name": "Whiskers",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["Water", "Dogs"]
+
+    // Only change code above this line
+    };
+
+## Accessing Object Properties with Dot Notation
+
+    // Setup
+    var testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+    };
+
+    // Only change code below this line
+
+    var hatValue = testObj.hat;      // Change this line
+    var shirtValue = testObj.shirt;    // Change this line
+
+## Accessing Object Properties with Bracket Notation
+
+当属性有空格的时候,需要使用中括号调取,属性也需要用引号引起来(好像本来就需要引起来)
+
+    // Setup
+    var testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+    };
+
+    // Only change code below this line
+
+    var entreeValue = testObj["an entree"];   // Change this line
+    var drinkValue = testObj["the drink"];    // Change this line
+
+## Accessing Object Properties with Variables
+
+    // Setup
+    var testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+    };
+
+    // Only change code below this line
+
+    var playerNumber = 16;       // Change this line
+    var player = testObj[playerNumber];   // Change this line
+
+## Updating Object Properties
+
+改变属性值的两种方法
+
+    // Setup
+    var myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+    };
+
+    // Only change code below this line
+    myDog.name = "Happy Coder";
+    myDog["name"] = "Happy Coder";
+
+## Add New Properties to a JavaScript Object
+
+    // Setup
+    var myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+    };
+
+    // Only change code below this line
+    myDog.bark = "woof";
+    myDog["bark"] = "woof";
+
+## Delete Properties from a JavaScript Object
+
+    // Setup
+    var myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+    };
+
+    // Only change code below this line
+
+    delete myDog.tails;
+
+## Using Objects for Lookups
+
+更改前
+
+    // Setup
+    function phoneticLookup(val) {
+    var result = "";
+
+    // Only change code below this line
+    switch(val) {
+        case "alpha":
+        result = "Adams";
+        break;
+        case "bravo":
+        result = "Boston";
+        break;
+        case "charlie":
+        result = "Chicago";
+        break;
+        case "delta":
+        result = "Denver";
+        break;
+        case "echo":
+        result = "Easy";
+        break;
+        case "foxtrot":
+        result = "Frank";
+    }
+
+    // Only change code above this line
+    return result;
+    }
+
+    phoneticLookup("charlie");
+
+更改后
+
+    // Setup
+    function phoneticLookup(val) {
+    var result = "";
+
+    // Only change code below this line
+        var lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank"
+        };
+        //这里用点通不过检验,不知道原因
+        result = lookup[val];
+    // Only change code above this line
+    return result;
+    }
+
+    phoneticLookup("charlie");
+
+## Testing Objects for Properties
+
+用.hasOwnProperty(propname)检验函数是否有当前属性,返回值为true或false
+
+    function checkObj(obj, checkProp) {
+    // Only change code below this line
+    if (obj.hasOwnProperty(checkProp)){
+        return obj[checkProp];
+    }else{
+        return "Not Found";
+    }
+    // Only change code above this line
+    }
+
+## Manipulating Complex Objects
+
+    //这是一个array,里面包含了一个object
+
+    var ourMusic = [
+    {
+        "artist": "Daft Punk",
+        "title": "Homework",
+        "release_year": 1997,
+        "formats": [ 
+        "CD", 
+        "Cassette", 
+        "LP"
+        ],
+        "gold": true
+    }
+    ];
+
+    var myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+        "CD",
+        "8T",
+        "LP"
+        ],
+        "gold": true
+    },
+    // Add a record here
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+        "CD",
+        "8T",
+        "LP"
+        ],
+        "gold": true
+    }
+    ];
+
 ## 
