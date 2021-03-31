@@ -502,4 +502,397 @@ JS中可以使用typeof  判定数据类型
 
 ## Comparison with the Inequality Operator
 
+    // Setup
+    function testNotEqual(val) {
+    if (val!=99) { // Change this line
+        return "Not Equal";
+    }
+    return "Equal";
+    }
 
+    testNotEqual(10);
+
+## Comparison with the Strict Inequality Operator
+
+    // Setup
+    function testStrictNotEqual(val) {
+    if (val!==17) { // Change this line
+        return "Not Equal";
+    }
+    return "Equal";
+    }
+
+    testStrictNotEqual(10);
+
+## Comparison with the Greater Than Operator
+
+    function testGreaterThan(val) {
+    if (val>100) {  // Change this line
+        return "Over 100";
+    }
+
+    if (val>10) {  // Change this line
+        return "Over 10";
+    }
+
+    return "10 or Under";
+    }
+
+    testGreaterThan(10);
+
+## Comparison with the Greater Than Or Equal To Operator
+
+    function testGreaterOrEqual(val) {
+    if (val>=20) {  // Change this line
+        return "20 or Over";
+    }
+
+    if (val>=10) {  // Change this line
+        return "10 or Over";
+    }
+
+    return "Less than 10";
+    }
+
+    testGreaterOrEqual(10);
+
+## Comparison with the Less Than Operator
+
+    function testLessThan(val) {
+    if (val<25) {  // Change this line
+        return "Under 25";
+    }
+
+    if (val<55) {  // Change this line
+        return "Under 55";
+    }
+
+    return "55 or Over";
+    }
+
+    testLessThan(10);
+
+## Comparison with the Less Than Or Equal To Operator
+
+    function testLessOrEqual(val) {
+    if (val<=12) {  // Change this line
+        return "Smaller Than or Equal to 12";
+    }
+
+    if (val<=24) {  // Change this line
+        return "Smaller Than or Equal to 24";
+    }
+
+    return "More Than 24";
+    }
+
+    testLessOrEqual(10);
+
+## Comparisons with the Logical And Operator
+
+    function testLogicalAnd(val) {
+    // Only change code below this line
+
+    if (val>=25 && val<=50) {
+        return "Yes";
+        }
+
+    // Only change code above this line
+    return "No";
+    }
+
+    testLogicalAnd(10);
+
+## Comparisons with the Logical Or Operator
+
+    function testLogicalOr(val) {
+    // Only change code below this line
+
+    if (val<10 || val>20) {
+        return "Outside";
+    }
+
+    // Only change code above this line
+    return "Inside";
+    }
+
+    testLogicalOr(15);
+
+## Introducing Else Statements
+
+    function testElse(val) {
+    var result = "";
+    // Only change code below this line
+
+    if (val > 5) {
+        result = "Bigger than 5";
+    }
+
+    else {
+        result = "5 or Smaller";
+    }
+
+    // Only change code above this line
+    return result;
+    }
+
+    testElse(4);
+
+## Introducing Else If Statements
+
+    function testElseIf(val) {
+    if (val > 10) {
+        return "Greater than 10";
+    }
+
+    else if (val < 5) {
+        return "Smaller than 5";
+    }
+    else{
+        return "Between 5 and 10";
+    }
+    }
+
+    testElseIf(7);
+
+## Logical Order in If Else Statements
+
+    function orderMyLogic(val) {
+    if (val < 5) {
+        return "Less than 5";
+    } else if (val < 10) {
+        return "Less than 10";
+    } else {
+        return "Greater than or equal to 10";
+    }
+    }
+
+    orderMyLogic(7);
+
+## Chaining If Else Statements
+
+    function testSize(num) {
+    // Only change code below this line
+    if (num < 5) {
+        return 'Tiny';
+    } else if (num < 10) {
+        return 'Small';
+    } else if (num < 15) {
+        return 'Medium';
+    } else if (num < 20) {
+        return 'Large';
+    } else {
+        return 'Huge';
+    }
+
+    // Only change code above this line
+    }
+
+    testSize(7);
+
+## Golf Code
+
+    var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+    function golfScore(par, strokes) {
+    // Only change code below this line
+    if (strokes===1) {
+        return names[0];
+    }else if(strokes <= par - 2	) {
+        return names[1];
+    }else if(strokes === par - 1	) {
+        return names[2];
+        }else if(strokes === par) {
+        return names[3];
+        }else if(strokes === par + 1) {
+        return names[4];
+        }else if(strokes === par + 2) {
+        return names[5];
+        }else if (strokes>= par + 3){
+        return names[6];
+        }
+
+    // Only change code above this line
+    }
+
+    golfScore(5, 4);
+
+## Selecting from Many Options with Switch Statements
+
+    function caseInSwitch(val) {
+    var answer = "";
+    // Only change code below this line
+
+
+    switch(val) {
+        case 1:
+        console.log("alpha");
+        answer = 'alpha';
+        break;
+        case 2:
+        console.log("beta");
+        answer = 'beta';
+        break;
+        case 3:
+        console.log("gamma");
+        answer = 'gamma';
+        break;
+        case 4:
+        console.log("delta");
+        answer = 'delta';
+        break;
+    }
+
+
+    // Only change code above this line
+    return answer;
+    }
+
+    caseInSwitch(1);
+
+## Adding a Default Option in Switch Statements
+
+    function switchOfStuff(val) {
+    var answer = "";
+    // Only change code below this line
+    switch (val) {
+        case 'a':
+        answer = "apple";
+        break;
+        case 'b':
+        answer = "bird";
+        break;
+        case 'c':
+        answer = "cat";
+        break;
+
+        default:
+        answer = "stuff";
+        break;
+    }
+
+
+    // Only change code above this line
+    return answer;
+    }
+
+    switchOfStuff(1);
+
+## Multiple Identical Options in Switch Statements
+
+    function sequentialSizes(val) {
+    var answer = "";
+    // Only change code below this line
+    switch(val) {
+        case 1:
+        case 2:
+        case 3:
+        answer = "Low";
+        break;
+        case 4:
+        case 5:
+        case 6:
+        answer = "Mid";
+        break;
+        case 7:
+        case 8:
+        case 9:
+        answer = "High";
+        break;
+    }
+
+
+    // Only change code above this line
+    return answer;
+    }
+
+    sequentialSizes(1);
+
+## Replacing If Else Chains with Switch
+
+    function chainToSwitch(val) {
+    var answer = "";
+
+    switch(val) {
+        case "bob":
+        answer = "Marley";
+        break;
+        case 42:
+        answer = "The Answer";
+        break;
+        case 1:
+        answer = "There is no #1";
+        break;
+        case 99:
+        answer = "Missed me by this much!";
+        break;
+        case 7:
+        answer = "Ate Nine";
+        break;
+    }
+
+    // Only change code above this line
+    return answer;
+    }
+
+    chainToSwitch(7);
+
+### 疑问：break；有什么作用
+
+## Returning Boolean Values from Functions
+
+Sometimes people use an if/else statement to do a comparison, like this:
+
+function isEqual(a,b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+But there's a better way to do this. Since === returns true or false, we can return the result of the comparison:
+
+function isEqual(a,b) {
+  return a === b;
+}
+
+    function isLess(a, b) {
+    // Only change code below this line
+
+        return a < b;
+
+    // Only change code above this line
+    }
+
+    isLess(10, 15);
+
+## Return Early Pattern for Functions
+
+When a return statement is reached, the execution of the current function stops and control returns to the calling location.
+
+Example
+
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+myFun();
+
+The above will display the string Hello in the console, and return the string World. The string byebye will never display in the console, because the function exits at the return statement.
+
+    // Setup
+    function abTest(a, b) {
+    // Only change code below this line
+    if (a<0 || b<0){
+        return undefined;
+    }
+
+    // Only change code above this line
+
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+    }
+
+    abTest(2,2);
+
+## 
