@@ -21,4 +21,6 @@ Google Colab免费提供GPU运算支持。
 
 参考
 
-[简书]https://www.jianshu.com/p/a42d69568966
+[简书](https://www.jianshu.com/p/a42d69568966)
+
+[知乎专栏](https://zhuanlan.zhihu.com/p/33344222)
