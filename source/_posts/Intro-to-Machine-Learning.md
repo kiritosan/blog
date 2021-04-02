@@ -155,13 +155,57 @@ for max_leaf_nodes in [5, 50, 500, 5000]:
 | Max leaf nodes: 500    |  Mean Absolute Error:  243495 |
 | Max leaf nodes: 5000   |  Mean Absolute Error:  254983 |
 
+>Conclusion
+>>Here's the takeaway: Models can suffer from either:
+
+>>Overfitting: capturing spurious patterns that won't recur in the future, leading to less accurate predictions, or
+
+>>Underfitting: failing to capture relevant patterns, again leading to less accurate predictions.
+
+>>We use validation data, which isn't used in model training, to measure a candidate model's accuracy. This lets us try many candidate models and keep the best one.
+
+### 实操
+
+```python
+candidate_max_leaf_nodes = [5, 25, 50, 100, 250, 500]
+# Write loop to find the ideal tree size from candidate_max_leaf_nodes
+res = []
+for max_leaf_nodes in candidate_max_leaf_nodes:
+    res.append(get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y))
+print(res)
+print(min(res))
+//之后人工看最小的对应哪个树叶数目。
+
+# Store the best value of max_leaf_nodes (it will be either 5, 25, 50, 100, 250 or 500)
+best_tree_size = 100
+
+# Check your answer
+step_1.check()
+```
+
+```python
+//官方解决方法：使用了生成器
+scores = {leaf_size: get_mae(leaf_size, train_X, val_X, train_y, val_y) for leaf_size in candidate_max_leaf_nodes}
+best_tree_size = min(scores, key=scores.get)
+```
+
+### 随机森林
+
+https://www.kaggle.com/dansbecker/random-forests
+
+```python
+//使用RandomForestRegressor 换掉DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error
+
+forest_model = RandomForestRegressor(random_state=1)
+forest_model.fit(train_X, train_y)
+melb_preds = forest_model.predict(val_X)
+print(mean_absolute_error(val_y, melb_preds))
+```
 
 
-
-
-
-
-## 代码中random_state的作用
+## 附：代码中random_state的作用
 
 通过设置random_state为一个特定的数值，可以保证下次运行同样的代码时，会出现同样的结果。
 
