@@ -214,3 +214,17 @@ print(mean_absolute_error(val_y, melb_preds))
 参考:
 
 [random_state](https://www.jianshu.com/p/4deb2cb2502f)
+
+## Automated machine learning (AutoML)
+
+机器学习过程有[七步](https://towardsdatascience.com/the-7-steps-of-machine-learning-2877d7e5548e)
+
+![](https://cdn.jsdelivr.net/gh/kiritosan/pic@master/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%83%E6%AD%A5.png)
+
+在用机器学习模型进行数据顺训练时,要用哪个模型在初学的时候最好的决定方法就是都试一遍积累经验。
+
+使用Google Cloud AutoML Tables可以让其帮我们做决定具体使用哪种模型。
+
+![](https://cdn.jsdelivr.net/gh/kiritosan/pic@master/img/Google%20Cloud%20AutoML%20Tables.png)
+
+但是可惜这是收费的，虽然可以领取代金券试用，但是需要绑定信用卡。
