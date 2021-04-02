@@ -19,8 +19,11 @@ Google Colab免费提供GPU运算支持。
 
 百度的AI Studio
 
+
 参考
 
 [简书](https://www.jianshu.com/p/a42d69568966)
 
 [知乎专栏](https://zhuanlan.zhihu.com/p/33344222)
+
+[Tensorflow](https://tensorflow.google.cn/tutorials/)
