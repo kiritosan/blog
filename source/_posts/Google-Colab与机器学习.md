@@ -27,3 +27,7 @@ Google Colab免费提供GPU运算支持。
 [知乎专栏](https://zhuanlan.zhihu.com/p/33344222)
 
 [Tensorflow](https://tensorflow.google.cn/tutorials/)
+
+[Getting Started With Google Colab](https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c)
+
+[Getting Started With Google Colab 译文](https://libertydream.github.io/2019/06/29/Google-Colab-%E5%85%A5%E9%97%A8/)
