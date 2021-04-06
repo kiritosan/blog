@@ -1205,6 +1205,8 @@ The above will display the string Hello in the console, and return the string Wo
 
 [CSDN解决方案](https://blog.csdn.net/weixin_30391339/article/details/98212760)
 
+注：**复制粘贴之后仍然未能通过**
+
 ### 失败案
 
     // Setup
@@ -1252,4 +1254,8 @@ The above will display the string Hello in the console, and return the string Wo
     }
 
     updateRecords(collection, 5439, 'artist', 'ABBA');
+
+## 总结
+
+搞清楚前后顺序很重要，'//没有tracks 输入不是tracks时 若数值为空则删除属性' 删除属性应该是大前提，把这个方法放到条件里面后就不能对这个条件之外的情况下起作用了。
 
