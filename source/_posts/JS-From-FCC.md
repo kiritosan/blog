@@ -1255,7 +1255,96 @@ The above will display the string Hello in the console, and return the string Wo
 
     updateRecords(collection, 5439, 'artist', 'ABBA');
 
-## 总结
+### 总结
 
 搞清楚前后顺序很重要，'//没有tracks 输入不是tracks时 若数值为空则删除属性' 删除属性应该是大前提，把这个方法放到条件里面后就不能对这个条件之外的情况下起作用了。
+
+## while 循环
+
+通过一个 while 循环，把从 5 到 0（包括 5 和 0） 的值添加到 myArray 中。
+
+```JavaScript
+// 设置
+var myArray = [];
+
+
+// 只修改这一行下面的代码
+var i = 5;
+while(i >= 0) {
+  myArray.push(i);
+  i--;
+}
+```
+
+## for 循环
+
+```JavaScript
+// 设置
+var myArray = [];
+
+// 只修改这一行下面的代码
+for (var i = 1; i <= 5; i++) {
+  myArray.push(i)
+}
+```
+
+## 使用 For 循环遍历数组的奇数
+
+```JavaScript
+// 设置
+var myArray = [];
+
+// 只修改这一行下面的代码
+
+for (var i = 1; i <= 9; i+= 2) {
+  myArray.push(i)
+}
+```
+
+## 使用 For 循环反向遍历数组
+
+```JavaScript
+// 设置
+var myArray = [];
+
+// 只修改这一行下面的代码
+for (var i = 9; i > 0; i -= 2) {
+  myArray.push(i);
+}
+```
+
+## 使用 For 循环遍历数组
+
+```JavaScript
+// 设置
+var myArr = [ 2, 3, 4, 5, 6];
+
+// 只修改这一行下面的代码
+var total = 0;
+for (var i = 0; i < myArr.length; i++) {
+   console.log(myArr[i]);
+   total = total + myArr[i];
+}
+```
+
+## 循环嵌套
+
+```JavaScript
+function multiplyAll(arr) {
+  var product = 1;
+  // 只修改这一行下面的代码
+  for (var i=0; i < arr.length; i++) {
+    for (var j=0; j < arr[i].length; j++) {
+      console.log(arr[i][j]);
+      product = product * arr[i][j];
+  }
+}
+  // 只修改这一行上面的代码
+  return product;
+}
+
+multiplyAll([[1,2],[3,4],[5,6,7]]);
+```
+
+## do...while 循环
 
