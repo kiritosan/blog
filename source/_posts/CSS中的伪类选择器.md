@@ -31,14 +31,20 @@ p:first-line
 p:before
 p:after
 
-## 扩展：属性选择器
+## 扩展
+
+### 属性选择器
 
 p[title]{}
 p[title="Hello"]{}
 <!-- 选择title属性值开头为Hel的元素 -->
 p[title^="Hel"]{}
 
+### 兄弟元素选择器
 
+span + p{}
+
+span ~ p{}
 
 ## 参考：
 
