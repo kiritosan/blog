@@ -31,6 +31,10 @@ p:first-line
 p:before
 p:after
 
+伪类和伪元素都是用来表示文档树以外的"元素"。
+
+[力扣](https://leetcode-cn.com/circle/discuss/B56jUg/)
+
 ## 扩展
 
 ### 属性选择器
