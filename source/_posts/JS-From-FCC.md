@@ -1348,3 +1348,22 @@ multiplyAll([[1,2],[3,4],[5,6,7]]);
 
 ## do...while 循环
 
+```JavaScript
+// 设置
+var myArray = [];
+var i = 10;
+
+// 只修改这一行下面的代码
+var myArray = [];
+var i = 10;
+do {
+  myArray.push(i);
+  i++;
+} while (i < 11);
+```
+
+## 使用递归代替循环*
+
+暂时搁置
+
+## 
