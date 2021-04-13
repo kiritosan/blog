@@ -1460,4 +1460,53 @@ function lookUpProfile(name, prop){
 lookUpProfile("Akira", "likes");
 ```
 
-## 
+## 使用 JavaScript 生成随机分数
+
+```javascript
+function randomFraction() {
+
+  // 只修改这一行下面的代码
+
+  return Math.random();
+
+  // 只修改这一行上面的代码
+}
+```
+
+## 使用 JavaScript 生成随机整数
+
+```javascript
+function randomWholeNum() {
+
+  // 只修改这一行下面的代码
+  //Math.random() 永远不会返回 1。同时因为向下取整，所以最终获得的结果不可能有 10。 这确保获得一个 0 到 9 之间的整数。
+  return Math.floor(Math.random() * 10);
+;
+}
+```
+
+## 生成某个范围内的随机整数
+
+```javascript
+function randomRange(myMin, myMax) {
+  // 只修改这一行下面的代码
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  // 只修改这一行上面的代码
+}
+```
+
+## 使用 parseInt 函数
+
+```javascript
+function convertToInteger(str) {
+  var a = parseInt(str);
+  return a;
+
+}
+
+convertToInteger("56");
+```
+
+## 使用 parseInt 函数并传入一个基数
+
+
