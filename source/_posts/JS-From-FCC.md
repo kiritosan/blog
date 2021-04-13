@@ -1364,7 +1364,17 @@ do {
 
 ## 使用递归代替循环*
 
-暂时搁置
+```javascript
+function sum(arr, n) {
+    if (n <= 0) {
+        //使得最后返回的sum函数为0
+        //最后指的是n=0时
+        return 0;
+    } else {
+        return sum(arr, n - 1) + arr[n - 1];
+    }
+}
+```
 
 ## 资料查找*
 
