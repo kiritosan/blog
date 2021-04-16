@@ -1509,4 +1509,37 @@ convertToInteger("56");
 
 ## 使用 parseInt 函数并传入一个基数
 
+```JavaScript
+function convertToInteger(str) {
+  str = parseInt(str, 2);
+  return str
+}
 
+convertToInteger("10011");
+```
+
+## 使用三元运算符
+
+```JavaScript
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal"
+}
+
+checkEqual(1, 2);
+```
+
+## 使用多个三元运算符
+
+```JavaScript
+function checkSign(num) {
+  return (num > 0) ? "positive"
+    : (num == 0) ? "zero"
+    : "negative";
+}
+
+checkSign(10);
+```
+
+## 使用递归创建一个倒计时
+
+未完待续
