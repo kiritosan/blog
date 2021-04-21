@@ -10,6 +10,8 @@ https://zh.learnlayout.com/
 
 ## display属性
 
+display属性配置浏览器渲染元素的方式，每种元素有其默认的渲染方式（display值）
+
 css中通过display来控制元素的布局
 
 大多数的元素默认布局有两种块状和行内,于是元素被分成块状元素和行内元素
