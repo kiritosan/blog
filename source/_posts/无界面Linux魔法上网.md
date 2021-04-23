@@ -7,15 +7,61 @@ tags:
 
 ### 安装v2ray
 
-https://github.com/v2fly/fhs-install-v2ray/blob/master/README.zh-Hans-CN.md
+[一键安装脚本](https://github.com/v2fly/fhs-install-v2ray/blob/master/README.zh-Hans-CN.md)
+
+安装
+
+```bash
+sudo su
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+```
+
+
 
 ## Sock5 代理
 
 ### proxychains4
 
+[源码](https://github.com/rofl0r/proxychains-ng)
 
+编译安装
 
+```bash
+./configure
+make -j
+sudo make install
+```
 
+配置
+
+```bash
+# 创建文件夹
+mkdir ~/.proxychains
+# 创建文件
+vi ~/.proxychains/proxychains.conf
+```
+
+文件的内容
+
+```bash
+strict_chain
+proxy_dns
+remote_dns_subnet 224
+tcp_read_time_out 15000
+tcp_connect_time_out 8000
+localnet 127.0.0.0/255.0.0.0
+quiet_mode
+
+[ProxyList]
+# 此处的端口值要设置成与v2ray配置文件相同的值
+socks5  127.0.0.1 10808
+```
+
+## 使用
+
+```bash
+proxychains4 bash
+```
 
 参考：
 
