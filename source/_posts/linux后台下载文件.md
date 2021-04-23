@@ -22,3 +22,5 @@ tail -f wget-log
 ## 参考：
 
 http://blog.chinaunix.net/uid-20639775-id-154579.html
+
+http://www.liyue.name/blog/?p=3288
