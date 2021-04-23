@@ -126,6 +126,12 @@ https://www.cnblogs.com/cfas/p/9348880.html
 
 https://blog.csdn.net/JsongNeu/article/details/90345747
 
+## 端口被占用解决办法
+
+1. 使用 lsof -i:[端口号] 命令找到占用端口的任务
+
+2. kill PID 结束任务
+
 ## 安装 ffmpeg
 
 CentOS
