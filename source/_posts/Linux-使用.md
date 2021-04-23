@@ -87,6 +87,10 @@ vi + 文件名
 
 ## 后台运行程序
 
+& 放到任务最后放到进行后台执行
+
+nohup 让程序始终在后台执行，即使关闭当前的终端也执行
+
 nohup ./go-cqhttp &
 
 查看nohup.out日志
@@ -95,9 +99,20 @@ tail -fn 50 nohup.out
 
 退出时输入exit退出可以保证后台运行，直接点终端的叉号不行。
 
+## 任务前后台切换
+
+1. Ctrl+z 暂停任务/进程/程序
+
+2. bg %[number]把程序放到后台运行
+
+3. fg %[number]把程序调到前台运行
+
+4. 使用 kill 命令终止后台运行的程序
+
+
 ## 查看后台运行任务
 
-jobs -l 当前终端
+jobs -l 当前终端，别的终端或者新建一个终端就看不到了
 
 ps -ef 通用
 
@@ -133,4 +148,22 @@ yum install ffmpeg ffmpeg-devel
 ## 安装Git
 
 sudo yum install -y git
+
+## python3安装
+
+腾讯云轻量服务器自带python3
+
+## python包管理工具下载
+
+
+## 安装v2ray
+
+https://github.com/v2fly/fhs-install-v2ray/blob/master/README.zh-Hans-CN.md
+
+输入命令：
+
+```bash
+sudo su
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+```
 
