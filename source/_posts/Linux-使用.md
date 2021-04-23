@@ -130,3 +130,7 @@ yum install ffmpeg ffmpeg-devel
 
 输入sudo rm -rf *
 
+## 安装Git
+
+sudo yum install -y git
+
