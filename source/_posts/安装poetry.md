@@ -42,3 +42,5 @@ https://juejin.cn/post/6844904083464126472
 https://python-poetry.org/docs/
 
 [离线安装](https://blog.csdn.net/daihaoxin/article/details/109262807)
+
+[配置](https://blog.csdn.net/daihaoxin/article/details/109262807)
