@@ -5,7 +5,15 @@ tags:
 ---
 ## Shadowsocks或者V2ray
 
-## V2ray
+### 安装v2ray
+
+https://github.com/v2fly/fhs-install-v2ray/blob/master/README.zh-Hans-CN.md
+
+## Sock5 代理
+
+### proxychains4
+
+
 
 
 
