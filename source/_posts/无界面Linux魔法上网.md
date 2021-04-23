@@ -16,7 +16,12 @@ sudo su
 bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
 ```
 
+配置
 
+```bash
+# 修改config.json文件为v2ray配置
+记录 Sock5 代理的端口和地址 例如：127.0.0.1:10808
+```
 
 ## Sock5 代理
 
