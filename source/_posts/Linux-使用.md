@@ -85,3 +85,48 @@ vi + 文件名
 
 ## CentOS 下安装w3m
 
+## 后台运行程序
+
+nohup ./go-cqhttp &
+
+查看nohup.out日志
+
+tail -fn 50 nohup.out
+
+退出时输入exit退出可以保证后台运行，直接点终端的叉号不行。
+
+## 查看后台运行任务
+
+jobs -l 当前终端
+
+ps -ef 通用
+
+参考链接：
+
+https://www.cnblogs.com/huanghuanghui/p/9708350.html
+
+https://www.linuxprobe.com/run-linuxcommand-backend.html
+
+https://www.cnblogs.com/cfas/p/9348880.html
+
+https://blog.csdn.net/JsongNeu/article/details/90345747
+
+## 安装 ffmpeg
+
+CentOS
+
+```bash
+yum install -y epel-release
+
+rpm -v --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+
+yum install ffmpeg ffmpeg-devel
+```
+
+## 清空当前目录的所有文件
+
+进入要删除的目录内部
+
+输入sudo rm -rf *
+
