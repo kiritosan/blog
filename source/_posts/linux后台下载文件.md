@@ -13,6 +13,9 @@ wget -bc https://github.91chifun.workers.dev/https://github.com//python-poetry/p
 ## 查看下载进度
 
 ```bash
+# 未测试
+tail -f
+# 或者
 tail -f wget-log
 ```
 
