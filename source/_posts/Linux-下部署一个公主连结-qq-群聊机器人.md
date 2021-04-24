@@ -6,3 +6,11 @@ tags:
 - bot
 ---
 链接：https://cn.pcrbot.com/deploy-a-priconne-bot-on-linux/
+
+## 命令
+
+```bash
+yum -y update
+yum -y groupinstall "Development tools"
+yum -y install wget zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc* libffi-devel make git vim screen
+```
