@@ -39,6 +39,38 @@ https://www.jianshu.com/p/4be52ce4cb91
 
 https://www.cnblogs.com/yanglang/p/10767919.html
 
+## 显示操作系统有关信息
+
+```bash
+# 显示操作系统的发行版号
+uname -r
+# 显示系统名、节点名称、操作系统的发行版号、内核版本等等（内核信息）
+uname -a
+# 查看已安装的centos版本信息
+cat /proc/version
+# 查看版本当前操作系统发行信息
+cat /etc/issue
+或
+cat /etc/centos-release
+```
+
+参考：https://www.cnblogs.com/shigfdengys/p/11297731.html
+
+## 更新
+
+```bash
+# 升级所有包同时也升级软件和系统内核
+yum -y update
+
+```
+
+```bash
+# 只升级所有包，不升级软件和系统内核
+yum -y upgrade
+```
+
+参考：https://blog.csdn.net/weixin_41709748/article/details/81537561
+
 ## 下载文件
 
 wget
