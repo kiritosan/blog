@@ -61,6 +61,12 @@ docker stop [imageName]
 
 服务类image运行后不会自动关闭。可以执行docker stop imageName停止。
 
+### 查看正在运行的容器
+
+```bash
+docker ps
+```
+
 参考：
 
 https://blog.csdn.net/China_110/article/details/84447349
