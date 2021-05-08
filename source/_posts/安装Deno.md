@@ -28,8 +28,12 @@ deno: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by
 deno: /usr/lib64/libc.so.6: version `GLIBC_2.18' not found (required by deno)
 ```
 
+## deno不支持CentOs7
 
+卸载deno
 
 ## 链接：
 
 https://zhuanlan.zhihu.com/p/140787128?from_voters_page=true
+
+https://stackoverflow.com/questions/55156942/deno-on-centos-7-glibc-2-18-not-found
