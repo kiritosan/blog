@@ -23,3 +23,8 @@ tags:
 
 例：[lulu音声按钮收集版](https://www.notion.so/sizuku/e738d441aba04b2e9073b5add93d6c67?v=fe976c61b06d44db8f0d32b41aec94c2)
 
+## 语音按钮
+
+地址：https://button.sizuku.top/
+
+GitHub地址：https://github.com/kiritosan/lulu
