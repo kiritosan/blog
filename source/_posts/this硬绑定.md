@@ -67,6 +67,13 @@ this指向的4种规则
 
 var a = 2;意思就是给window添加一个属性a=2，两者是等价的
 
+函数里的this指向谁，要看函数是被谁怎么调用的。
+foo() 直接进行调用，则为全局对函数进行调用，非严格模式下，this指向window；
+obj.foo() obj对其进行隐式调用，this指向obj
+(foo.bind(obj))() window调用包装函数，包装函数中让obj显式调用foo，foo里面的this指向obj，虽然包装函数的this指向window；
+
+
+
 
 [You Don't Know JS: this & Object Prototypes
 Chapter 2: this All Makes Sense Now!](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch2.md#implicit-binding)
