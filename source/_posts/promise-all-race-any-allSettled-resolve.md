@@ -1,5 +1,5 @@
 ---
-title: promise all race any allSettled resolve
+title: promise all race any allSettled resolve reject
 date: 2022-03-23 19:45:46
 tags:
 - 前端
@@ -97,5 +97,17 @@ Promise.MyAllSettled = function (promises) {
 }
 ```
 
+## reject
+
+```javascript
+Promise.myReject = function (value) {
+  return new Promise((_, reject) => {
+    reject(value)
+  })
+}
+```
+
 ## ref
 https://juejin.cn/post/7069805387490263047
+
+https://juejin.cn/post/7038371452084551694
