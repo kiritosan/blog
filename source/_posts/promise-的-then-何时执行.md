@@ -54,8 +54,30 @@ resolve或reject何时执行，何时将紧跟着（重要！）的then里面的
 简化：
 只有promise对象状态变成不是pending的状态，才将next里的函数放入微队列
 
+## 顺序
+```javascript
+new Promise(r => r(11))
+.then(r11 => {
+  console.log('r11', r11);
+  return r11 + 1;
+})
+.then(r12 => {
+  console.log('r12', r12);
+  return r12 + 1;
+})
+.then(r13 => {
+  console.log('r13', r13);
+});
+```
+看开始执行的顺序new Promise要早于传入的executor，但是看结束执行顺序的话executor要先结束然后才生成了promise对象
+
+delete----- then函数生成的promise一定是未决的，因为then里面的函数执行的同时才会执行resolve或reject，而then里面函数不是放在回调队列里（promise未决）就是放在微队列里（promies已决），不会立马执行。 -----delete 实际上返回的是已决的
+
+then里面函数返回的值会成为then生成的promise已决的值
+
 
 ## Refs
 
+https://blog.csdn.net/z591102/article/details/107203838 //一步一步分析
 https://juejin.cn/post/6883121706123132936
 https://zh.javascript.info/microtask-queue
