@@ -78,6 +78,7 @@ then里面函数返回的值会成为then生成的promise已决的值
 
 ## Refs
 
+https://www.cnblogs.com/smile-fanyin/p/14622432.html
 https://blog.csdn.net/z591102/article/details/107203838 //一步一步分析
 https://juejin.cn/post/6883121706123132936
 https://zh.javascript.info/microtask-queue
