@@ -76,3 +76,6 @@ So we can make folders for each component and it's stories(also other files rela
 
 !!mention that after change the configuration in .storybook folder, we need to restart service to let it work.
 
+## ref
+
+https://github.com/bangumi/frontend/
