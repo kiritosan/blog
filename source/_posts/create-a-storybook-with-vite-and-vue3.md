@@ -74,3 +74,5 @@ But in this components folder we find there are some chaos beacuse each componen
 
 So we can make folders for each component and it's stories(also other files related)
 
+!!mention that after change the configuration in .storybook folder, we need to restart service to let it work.
+
