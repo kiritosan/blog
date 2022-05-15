@@ -68,6 +68,26 @@ socks5  127.0.0.1 10808
 proxychains4 bash
 ```
 
+## Configuration
+
+proxychains looks for configuration in the following order:
+
+SOCKS5 proxy port in environment variable ${PROXYCHAINS_SOCKS5} (if set, no further configuration will be searched)
+
+file listed in environment variable ${PROXYCHAINS_CONF_FILE} or provided as a -f argument to proxychains script or binary.
+
+./proxychains.conf
+
+$(HOME)/.proxychains/proxychains.conf
+
+/etc/proxychains.conf
+
+see more in /etc/proxychains.conf
+
 参考：
 
 https://ry.huaji.store/2020/08/Linux-magic-network/
+
+https://medium.com/@xiaoqinglin2018/mac-osx-%E4%BD%BF%E7%94%A8proxychains-ng-91ba61472fdf
+
+https://github.com/haad/proxychains
