@@ -30,3 +30,6 @@ set-option -ga terminal-overrides ",screen-256color:Tc"
 之后显示正常
 
 注意：不用像stackoverflow上面搜到的答案那样更改.zshrc文件
+
+color设置（putty vim screen tmux）
+https://gist.github.com/limingjie/4975c36d13d0927613e6
