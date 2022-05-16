@@ -20,8 +20,13 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 
 ```bash
 # 修改config.json文件为v2ray配置
+# config.json位于usr/local/etc/v2ray/config.json
 记录 Sock5 代理的端口和地址 例如：127.0.0.1:10808
 ```
+
+!注意：改变v2ray的config文件后要重启v2ray服务
+service v2ray restart
+
 
 ## Sock5 代理
 
