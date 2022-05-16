@@ -22,9 +22,11 @@ https://github.com/arcticicestudio/nord-vim/issues/72
 
 写入如下配置（使用上面链接说的xterm-256color不能正常显示颜色）
 
-```bash
+```conf
 set -g default-terminal "screen-256color"
 set-option -ga terminal-overrides ",screen-256color:Tc"
 ```
 
-不用更改.zshrc文件
+之后显示正常
+
+注意：不用像stackoverflow上面搜到的答案那样更改.zshrc文件
